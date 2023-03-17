@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('auth/login');
-});
+Route::get('/', [PageController::class, 'login']);
+Route::get('/logout', [PageController::class, 'logout']);
+Route::get('/dashboard/admin', [PageController::class, 'dashboardAdmin']);
+Route::get('/outlet/admin', [PageController::class, 'outletAdmin']);
+Route::get('/product/admin', [PageController::class, 'productAdmin']);
+Route::get('/member/admin', [PageController::class, 'memberAdmin']);
+Route::get('/transaction/admin', [PageController::class, 'transactionAdmin']);
+Route::get('/user/admin', [PageController::class, 'userAdmin']);
+

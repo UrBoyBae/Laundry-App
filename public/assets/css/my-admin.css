@@ -1,0 +1,137 @@
+.my-container {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Sidebar */
+.my-sidebar {
+    width: 93px;
+    height: 100vh;
+    background-color: #F9F9F9;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 94px;
+    padding-bottom: 40px;
+}
+
+.my-list-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.my-menu {
+    width: 53px;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+
+.my-menu i {
+    color: #1678F3;
+}
+
+.my-menu.my-menu-page {
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+.my-menu.my-menu-page i {
+    color: #fff;
+}
+
+/* Main Content */
+.my-main-content {
+    width: calc(100% - 93px);
+    margin-left: 93px;
+}
+
+/* Navbar */
+.my-navbar {
+    width: 100%;
+    height: 75px;
+    padding: 0 0 0 50px;
+    background-color: rgba(243, 243, 243, 1);
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.my-left-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 22px;
+}
+
+.my-left-navbar a {
+    color: #000;
+}
+
+span.my-title {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+/* Inner Content */
+.my-inner-content {
+    padding: 120px 70px 0;
+}
+
+/* Dashboard */
+.my-best-product {
+    background-color: #F3F3F3;
+    padding: 18px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.my-best-product > span {
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.my-card-view {
+    width: 100%;
+    display: flex;
+    /* gap: 34px; */
+    justify-content: space-around;
+}
+
+.my-card {
+    height: 150px;
+    width: 150px;
+    background-color: #1678F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.my-card span {
+    font-size: 20px;
+    color: white;
+}
