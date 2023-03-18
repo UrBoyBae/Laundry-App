@@ -1,4 +1,4 @@
-@extends('layouts.adminLayout')
+@extends('layouts.kasirLayout')
 
 @section('mainContent')
 <div class="my-best-product">

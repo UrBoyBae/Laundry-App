@@ -1,4 +1,4 @@
-@extends('layouts.adminLayout')
+@extends('layouts.kasirLayout')
 
 @section('mainContent')
     <div class="my-wrap-table">
@@ -8,18 +8,18 @@
                 Tambah Data
             </div>
         </div>
-        <table id="tableProduct" class="table is-fullwidth">
+        <table id="tableMember" class="table is-fullwidth">
             <thead>
                 <tr>
-                    <th>ID Product</th>
-                    <th>Outlet</th>
-                    <th>Jenis Product</th>
-                    <th>Nama Paket</th>
-                    <th>Harga</th>
+                    <th>ID Member</th>
+                    <th>Nama</th>
+                    <th>Alamat</th>
+                    <th>Jenis Kelamin</th>
+                    <th>No.Tlp</th>
                     <th>Action</th>
                 </tr>
             </thead>
-            <tbody id="bodyProduct">
+            <tbody id="bodyMember">
                 
             </tbody>
         </table>

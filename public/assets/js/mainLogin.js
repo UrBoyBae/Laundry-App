@@ -11,6 +11,15 @@ $(document).ready(function () {
             },
             dataType: "json",
             success: function (response) {
+                var data = response.data
+
+                if(data.role == 'admin'){
+                    window.location.href = 'http://127.0.0.1/laundry-app/public/dashboard/admin';
+                } else if(data.role == 'kasir'){
+                    window.location.href = 'http://127.0.0.1/laundry-app/public/dashboard/kasir';
+                } else if(data.role == 'owner'){
+                    window.location.href = 'http://127.0.0.1/laundry-app/public/dashboard/owner';
+                }
             }
         });
     });

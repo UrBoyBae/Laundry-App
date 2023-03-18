@@ -17,31 +17,30 @@
     <div class="flex h-screen bg-white">
         <div class="w-3/5 my-left-content flex flex-col justify-center px-16">
             <span id="tes" class="text-4xl my-font-mplus mb-12">Get's Started</span>
-            <form>
-                <div class="flex flex-col gap-10 mb-14">
-                    <div>
-                        <label class="ml-3 text-lg my-login-color">Username</label>
-                        <div class="flex items-center gap-3 my-login-input pl-4 pr-4">
-                            <img src="{{ asset('assets/images/username.png') }}" width="25px">
-                            <input type="text" name="username" id="username"
-                                class="focus:outline-none w-full text-lg p-2" placeholder="Masukkan Username" required
-                                autocomplete="off">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="ml-3 text-lg my-login-color">Password</label>
-                        <div class="flex items-center gap-3 my-login-input pl-4 pr-4">
-                            <img src="{{ asset('assets/images/password.png') }}" width="25px">
-                            <input type="password" name="password" id="password"
-                                class="focus:outline-none w-full text-lg p-2" placeholder="Masukkan Password" required
-                                autocomplete="off">
-                        </div>
+            <div class="flex flex-col gap-10 mb-14">
+                <div>
+                    <label class="ml-3 text-lg my-login-color">Username</label>
+                    <div class="flex items-center gap-3 my-login-input pl-4 pr-4">
+                        <img src="{{ asset('assets/images/username.png') }}" width="25px">
+                        <input type="text" name="username" id="username"
+                            class="focus:outline-none w-full text-lg p-2" placeholder="Masukkan Username" required
+                            autocomplete="off">
                     </div>
                 </div>
-                <div class="flex flex-col items-center">
-                    <button type="submit" class="my-primary-btn text-white w-52 py-3 rounded-full" id="login">Login</button>
+                <div>
+                    <label class="ml-3 text-lg my-login-color">Password</label>
+                    <div class="flex items-center gap-3 my-login-input pl-4 pr-4">
+                        <img src="{{ asset('assets/images/password.png') }}" width="25px">
+                        <input type="password" name="password" id="password"
+                            class="focus:outline-none w-full text-lg p-2" placeholder="Masukkan Password" required
+                            autocomplete="off">
+                    </div>
                 </div>
-            </form>
+            </div>
+            <div class="flex flex-col items-center">
+                <button type="submit" class="my-primary-btn text-white w-52 py-3 rounded-full"
+                    id="login">Login</button>
+            </div>
         </div>
         <div class="w-2/5 flex flex-col justify-center items-center my-primary-bg my-right-content">
             <img src="{{ asset('assets/images/illustrationLogin.png') }}" width="258px">

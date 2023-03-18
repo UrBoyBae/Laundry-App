@@ -1,26 +1,30 @@
-@extends('layouts.adminLayout')
+@extends('layouts.ownerLayout')
 
 @section('mainContent')
     <div class="my-wrap-table">
         <div class="wrap-add-btn">
-            <div class="my-add-btn my-primary-bg" id="my-modalAdd-trigger" data-modal-target="my-bg-modal-add">
-                <i class="uil uil-plus-circle"></i>
-                Tambah Data
-            </div>
+            <a href="{{asset('/addTransaction/kasir')}}">
+                <div class="my-add-btn my-primary-bg">
+                    <i class="uil uil-print"></i>
+                    Convert To PDF
+                </div>
+            </a>
         </div>
-        <table id="tableProduct" class="table is-fullwidth">
+        <table id="tableTransaction" class="table is-fullwidth">
             <thead>
                 <tr>
-                    <th>ID Product</th>
-                    <th>Outlet</th>
-                    <th>Jenis Product</th>
-                    <th>Nama Paket</th>
-                    <th>Harga</th>
-                    <th>Action</th>
+                    <th>ID Transaksi</th>
+                    <th>Kode Invoice</th>
+                    <th>Member</th>
+                    <th>Tanggal</th>
+                    <th>Tenggat</th>
+                    <th>Status</th>
+                    <th>Pembayaran</th>
+                    <th>User</th>
                 </tr>
             </thead>
-            <tbody id="bodyProduct">
-                
+            <tbody id="bodyTransaction">
+
             </tbody>
         </table>
     </div>
