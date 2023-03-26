@@ -464,6 +464,34 @@ table#tableUser.dataTable {
     display: none;
 }
 
+.my-bg-modal-user {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.my-bg-modal-delete {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
 .my-modal-active {
     display: flex;
 }
@@ -474,6 +502,32 @@ table#tableUser.dataTable {
     height: 662px;
     background-color: #fff;
     padding: 40px 41px;
+    /* border-right: 20px solid #1678f3; */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.my-content-modal-user {
+    width: 600px;
+    height: 720px;
+    background-color: #fff;
+    padding: 40px 41px;
+    /* border-right: 20px solid #1678f3; */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.my-content-modal-delete {
+    width: 487px;
+    height: 246px;
+    background-color: #fff;
+    padding: 5px 41px;
     /* border-right: 20px solid #1678f3; */
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -576,6 +630,28 @@ table#tableUser.dataTable {
     font-size: 18px;
 }
 
+.my-form-modal .my-radio-modal {
+    height: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #000;
+}
+
+.my-form-modal .my-radio-modal label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.my-content-modal-delete .my-modal-btn {
+    display: flex;
+    justify-content: space-around;
+    gap: 27px;
+    margin-top: 25px;
+}
+
 .my-modal-btn {
     display: flex;
     justify-content: flex-end;
@@ -583,9 +659,9 @@ table#tableUser.dataTable {
     margin-top: 25px;
 }
 
-.my-modal-btn .my-addBtn-modal-add {
+.my-addBtn-modal-add {
     height: 37px;
-    width: 105px;
+    width: 150px;
     font-weight: 500;
     margin-top: 25px;
     cursor: pointer;
@@ -599,15 +675,37 @@ table#tableUser.dataTable {
     -o-border-radius: 15px;
 }
 
-.my-modal-btn .my-closeBtn-modal-add {
+.my-closeBtn-modal-add {
     height: 37px;
-    width: 105px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 500;
     margin-top: 25px;
     cursor: pointer;
-    background-color: rgba(255, 96, 96, 1);
+    background-color: #A3A3A3;
     color: #fff;
-    border:1px solid rgba(255, 96, 96, 1);
+    border:1px solid #A3A3A3;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.my-deleteBtn-modal {
+    height: 37px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin-top: 25px;
+    cursor: pointer;
+    background-color: #1678F3;
+    color: #fff;
+    border:1px solid #1678F3;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
