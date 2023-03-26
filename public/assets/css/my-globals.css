@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #1678F3;
+    --neutral-color: #fff;
+
+    --trans-3s: all 0.3s ease;
+}
+
+.my-primary-bg {
+    background-color: var(--primary-color) !important;
+}
+
+.my-primary-color {
+    color: var(--primary-color);
+}
+
+.my-primary-btn {
+    background-color: var(--primary-color) !important;
+    font-weight: 500;
+    transition: var(--trans-3s);
+    -webkit-transition: var(--trans-3s);
+    -moz-transition: var(--trans-3s);
+    -ms-transition: var(--trans-3s);
+    -o-transition: var(--trans-3s);
+}
+
+.my-primary-btn:hover {
+    background-color: var(--neutral-color) !important;
+    outline: 1px solid var(--primary-color) !important;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.my-left-content {
+    border-left: 16px solid var(--primary-color);
+}
+
+.my-font-mplus {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #7D7D7D;
+}
+
+.my-login-color {
+    color: #7D7D7D;
+}
+
+.my-login-input {
+    border: 2px solid #DDDDDD !important;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.my-right-content {
+    border-radius: 80px 0 0 80px;
+    -webkit-border-radius: 80px 0 0 80px;
+    -moz-border-radius: 80px 0 0 80px;
+    -ms-border-radius: 80px 0 0 80px;
+    -o-border-radius: 80px 0 0 80px;
+}
+
+tbody tr td div.my-status {
+    background-color: #1678F3;
+    color: #fff;
+    padding: 2px 4px;
+    width: 100%;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+tbody tr td div.my-status.my-baru-status {
+    background-color: rgb(22, 120, 243, 30%);
+    color: #1678F3;
+    font-weight: 500;
+}
+
+tbody tr td div.my-status.my-proses-status {
+    background-color: rgb(191, 112, 15, 30%);
+    color: #BF710F;
+    font-weight: 500;
+}
+
+tbody tr td div.my-status.my-selesai-status {
+    background-color: rgb(99, 89, 233, 30%);
+    color: #6359e9;
+    font-weight: 500;
+}
+
+tbody tr td div.my-status.my-diambil-status {
+    background-color: rgb(2, 177, 90, 30%);
+    color: #02B15A;
+    font-weight: 500;
+}
