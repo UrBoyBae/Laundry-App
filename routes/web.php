@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'login']);
 Route::get('/logout', [PageController::class, 'logout']);
 
+// Print
+Route::get('/transaction/print', [PageController::class, 'printPDF']);
+
+
 // Admin
 Route::get('/dashboard/admin', [PageController::class, 'dashboardAdmin']);
 Route::get('/outlet/admin', [PageController::class, 'outletAdmin']);

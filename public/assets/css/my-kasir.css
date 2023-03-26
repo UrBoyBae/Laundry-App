@@ -196,6 +196,13 @@ table#tableHistoryTransaction.dataTable {
     cursor: pointer;
 }
 
+.wrap-double-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
 .my-add-btn {
     width: 182px;
     padding: 8px 20px;

@@ -2,7 +2,13 @@
 
 @section('mainContent')
     <div class="my-wrap-table">
-        <div class="wrap-add-btn">
+        <div class="wrap-double-btn">
+            <a href="{{asset('/transaction/print')}}" target="_blank">
+                <div class="my-add-btn my-primary-bg">
+                    <i class="uil uil-print"></i>
+                    Convert To PDF
+                </div>
+            </a>
             <a href="{{asset('/addTransaction/admin')}}">
                 <div class="my-add-btn my-primary-bg">
                     <i class="uil uil-plus-circle"></i>

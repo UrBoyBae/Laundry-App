@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\transactionModel;
+use Barryvdh\DomPDF\Facade\PDF as PDF;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -12,6 +14,13 @@ class PageController extends Controller
 
     public function logout() {
         return view('auth.login');
+    }
+
+    // Print
+    public function printPDF() {
+        $transaction = transactionModel::all();
+        $pdf = PDF::loadView('components.pdf.transactionPDF', ['transaction' => $transaction->loadMissing('member:id,nama,alamat', 'user:id,nama')]);
+    	return $pdf->stream('laporan-transaksi.pdf');
     }
 
     // Admin
